@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kiriri Women's University</title>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.content div');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>This is My University Website</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about-us')">About Us</a></li>
+            <li><a href="#" onclick="showSection('departments')">Departments</a></li>
+            <li><a href="#" onclick="showSection('contact-us')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div id="home">
+            <img src="https://www.kwust.ac.ke/wp-content/uploads/2018/09/partnership-2-1.jpg" alt="Kiriri Women's University Administration Block" width="500" height="300">
+            <p>Kiriri Women's University is a leading institution dedicated to academic excellence. Our beautiful campus and dedicated staff ensure students receive the best education possible.</p>
+        </div>
+        <div id="about-us">
+            <h1>About-us</h1>
+            <p>Kiriri Women’s University is a leading institution dedicated to academic excellenceKiriri Women’s University of Science and Technology (KWUST) is a private, women’s only Kenyan university. As a women’s only university, our main objective is to bridge the gap in gender representation in higher education as well as contributing to the social and economic development of the country. The university was founded in 2002 and is accredited by The Commission for University Education (CUE)..</p>
+        </div>
+        <div id="departments">
+                        <ol>
+                <li>Computer Science</li>
+                <li>Mathematics</li>
+                <li>Business</li>
+                <li>Education</li>
+                <li>Hospitality</li>
+                <li>Information Technology</li>
+            </ol>
+        </div>
+        <div id="contact-us">
+            <h1>Contact us on</h1>
+            <p>Address: Kiriri Women's University, Nairobi, Kenya</p>
+            <p>Email: info@kiriri.ac.ke</p>
+            <p>Phone: +254 700 000 000</p>
+        </div>
+    </div>
+
+    <script>
+        // Show Home section by default
+        showSection('home');
+    </script>
+</body>
+</html>
